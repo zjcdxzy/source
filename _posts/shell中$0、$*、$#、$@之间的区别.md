@@ -1,4 +1,4 @@
-title: shell 中-bash、、0、 之间的区别
+title: shell中$0、$*、$#、$@之间的区别
 date: 2015-12-01 18:48:34
 categories: Shell
 tags:
