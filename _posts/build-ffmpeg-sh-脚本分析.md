@@ -4,8 +4,6 @@ categories: Shell
 tags:
 ---
 
-##build-ffmpeg.sh 脚本分析
-
 ### 脚本参数的判定
 
 ```bash
