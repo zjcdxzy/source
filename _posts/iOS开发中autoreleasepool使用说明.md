@@ -14,17 +14,16 @@ https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/MemoryMgm
 
 1. 代码块
 
-
+ ```
+	@autoreleasepool {
+	// Code that creates autoreleased objects.
+	}
+ ```
 	
-		@autoreleasepool {
-	    // Code that creates autoreleased objects.
-		}
+  *At the end of the autorelease pool block, objects  that received an autorelease message within the block are sent a release message—an object receives a release message for each time it was sent an autorelease message within the block.*
 	
-
-	**At the end of the autorelease pool block, objects that received an autorelease message within the block are sent a release message—an object receives a release message for each time it was sent an autorelease message within the block.**
-
 	
-	> 在的autoreleasepool代码块执行结束的时候，自动释放池收到一条autorelease消息，池中的对象收到一条release的消息。
+  >在的autoreleasepool代码块执行结束的时候，自动释放池收到一条autorelease消息，池中的对象收到一条release的消息。
 	
 2. autorelease的嵌套使用
 
