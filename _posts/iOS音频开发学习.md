@@ -55,9 +55,13 @@ tags: ffmpeg
 ## iOS音频框架
 ### 苹果提供的处理音频的系统框架
 
-- Audio Session Services
-- Audio Unit Services
-- Audio Convert Services 
+![](http://7xosar.com1.z0.glb.clouddn.com/core_audio_layers_2x.png)
+
+- 如果需求是播放一段音频（File、Buffer或URL），AVAudioPlayer通常都可以满足需求。
+- 如果对性能有要求，或者是播放流式Buffer，那就得用到Audio Queue Services，Audio Queue播放是以Packet形式。
+ 1. Extended Audio File Services有一些API，可用帮你计算每个包的大小；
+ 2. Audio File Service或Audio File Stream Services更智能，你只管塞数据给它，它自动把包组好给你。
+ 3. 在ffmpeg软解播放器中可以使用Auido Queue实现音频播放。
 
 
 

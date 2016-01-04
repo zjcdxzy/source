@@ -7,9 +7,9 @@ tags:
 
 ## AudioFileStream介绍
 
-- AudioFileStreamer是用来读取采样率、码率、时长等基本信息以及分离音频帧。
-- AudioFileStreamer用在流播放中，当然不仅限于网络流，本地文件同样可以用它来读取信息和分离音频帧。
-- AudioFileStreamer的主要数据是文件数据，支持的文件格式有：
+- AudioFileStreame是用来读取采样率、码率、时长等基本信息以及分离音频帧。
+- AudioFileStreame用在流播放中，当然不仅限于网络流，本地文件同样可以用它来读取信息和分离音频帧。
+- AudioFileStreame的主要数据是文件数据，支持的文件格式有：
 
 	* MPEG-1 Audio Layer 3, used for .mp3 files
 	* MPEG-2 ADTS, used for the .aac audio data format
